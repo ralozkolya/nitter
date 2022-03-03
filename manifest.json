@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Replace with Nitter.net",
+  "version": "0.1.0",
+  "description": "Replace Twitter URL with Nitter equivalent - more private and less restrictive alternative",
+  "icons": {
+    "48": "icons/logo.svg",
+    "96": "icons/logo.svg"
+  },
+  "page_action": {
+    "browser_style": true,
+    "default_icon": "icons/logo.svg",
+    "default_title": "Redirect to Nitter.net",
+    "show_matches": [
+      "*://*.twitter.com/*",
+      "*://*.twimg.com/*"
+    ]
+  },
+  "background": {
+    "scripts": [
+      "nitter.js"
+    ]
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
